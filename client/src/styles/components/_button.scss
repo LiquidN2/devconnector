@@ -1,0 +1,50 @@
+.btn {
+    background-color: $color-grey-lightest;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: none;
+    padding: 2rem;
+    transition: background-color .2s;
+    cursor: pointer;
+    
+    &:active {
+        transform: translateY(1px);
+        // border: 1px solid transparent;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $color-grey-lighter;
+    }
+
+    &--login {
+        width: 100%;
+    }
+    
+    &--green {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+    &--color-primary {
+        background-color: $color-primary;
+        color: white;
+    }
+
+    &--color-primary:hover {
+        background-color: $color-primary-dark;
+    }
+
+    &--full {
+        width: 100%
+    }
+
+    &--small {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+  }
+  

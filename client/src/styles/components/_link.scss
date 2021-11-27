@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+
+.link {
+    &--standard {
+        // text-decoration: none;
+        color: $color-grey;
+        transition: color .2s;
+    }
+
+    &--standard:hover {
+        color: $color-primary;
+    }
+}

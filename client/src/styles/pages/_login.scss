@@ -1,0 +1,73 @@
+.section-login-registration {
+  // background: linear-gradient(to right, $color-primary, $color-secondary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+    
+    flex: 1;
+
+    background-color: white;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 4rem;
+    
+    border: none;
+    border-radius: .3rem;
+    
+    display: flex;
+    flex-direction: column;
+   
+    box-shadow: 0 .2rem 2rem .5rem rgba(0, 0, 0, .2);
+}
+  
+  .tab-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    
+    list-style-type: none;
+    
+    margin-bottom: 4rem;
+    
+    &__item {
+      flex-grow: 1;
+      background-color: $color-grey-lighter;
+    }
+    
+    &__item--active {
+      // background-color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+    
+    &__item--active &__link {
+      // color: white;
+      color: $color-primary;
+    }
+    
+    &__link {
+      display: block;
+      padding: 2rem 3rem;
+      text-align: center;
+      text-decoration: none;
+      color: $color-grey-dark;
+    }
+   
+  }
+  
+  .tab-content {
+    &__heading {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      h1 {
+        color: $color-grey-darkest;
+        font-weight: 400 !important;
+      }
+    }
+  }
+  
