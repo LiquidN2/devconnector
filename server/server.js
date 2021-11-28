@@ -62,10 +62,10 @@ app.use('/api/users', users);
 // server static assets if in production
 if (env === 'production') {
 	// set static folder
-	app.use(express.static('client/build'));
+	app.use(express.static(path.resolve(__dirname, '..', 'client', 'build')));
 
 	app.get('*', (req, res) => {
-		const clientIndexHtml = path.resolve(__dirname, 'client', 'build', 'index.html');
+		const clientIndexHtml = path.resolve(__dirname, '..', 'client', 'build', 'index.html');
 		res.sendFile(clientIndexHtml);
 	});
 }
