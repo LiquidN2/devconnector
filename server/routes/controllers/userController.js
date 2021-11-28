@@ -81,7 +81,7 @@ const userLogin = (req, res) => {
       const userId = user._id.toHexString();
       return Promise.all([
         user.generateToken(),
-        createCustomFireBaseToken(userId)
+        // createCustomFireBaseToken(userId)
       ]);
     })
     .then(([token, firebaseToken]) => {

@@ -1,4 +1,5 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
+
 // Load model
 const Connection = require('./../../models/Connection');
 
